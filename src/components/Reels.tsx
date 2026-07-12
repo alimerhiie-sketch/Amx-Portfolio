@@ -48,7 +48,7 @@ const ALL_REELS = [
 ];
 
 const ALL_CATEGORIES = ["All", ...Array.from(new Set(ALL_REELS.map((r) => r.category)))];
-const STORJ_BASE = "https://link.storjshare.io/s/jw3l74f4cnrexi7k63i3nnuxeela/amxreels";
+const STORJ_BASE = "https://link.storjshare.io/s/jwgdhfs6it4vyrx45oujruwxco6a/amxreels";
 
 function ReelCard({
   reel,
@@ -201,7 +201,7 @@ function LightboxPlayer({ reel, onClose }: { reel: (typeof ALL_REELS)[0]; onClos
           onClick={(e) => e.stopPropagation()}
         >
           <video
-            src={`https://link.storjshare.io/s/jw3l74f4cnrexi7k63i3nnuxeela/amxreels/${encodeURIComponent(reel.file)}`}
+            src={`${STORJ_BASE}/${encodeURIComponent(reel.file)}`}
             className="w-full h-full object-cover"
             autoPlay
             controls
