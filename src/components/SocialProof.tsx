@@ -40,7 +40,6 @@ const clientLogos = [
   "727158742_18597191458000572_6528329429385307584_n.jpg",
 ];
 
-const VISIBLE_LOGOS = 12;
 
 function LogoCircle({ logo, i, inView }: { logo: string; i: number; inView: boolean }) {
   return (
