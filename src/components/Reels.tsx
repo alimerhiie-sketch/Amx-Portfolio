@@ -66,10 +66,9 @@ function ReelCard({
   const [loaded, setLoaded] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [showPlay, setShowPlay] = useState(false);
-  const cardInView = useInView(cardRef, { once: true, margin: "0px" });
   const playTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const src = cardInView ? `${STORJ_BASE}/${encodeURIComponent(reel.file)}` : undefined;
+  const src = `${STORJ_BASE}/${encodeURIComponent(reel.file)}`;
 
   useEffect(() => {
     if (!videoRef.current) return;
