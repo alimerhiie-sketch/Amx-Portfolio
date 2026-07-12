@@ -75,7 +75,7 @@ export default function Contact() {
                   Email me
                 </a>
                 <a
-                  href="https://wa.me/9618936640"
+                  href="https://wa.me/96181936640"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-semibold px-8 py-4 rounded-full transition-all duration-200 hover:scale-105 cursor-pointer border"
