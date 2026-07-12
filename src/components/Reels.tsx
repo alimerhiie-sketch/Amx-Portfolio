@@ -48,7 +48,7 @@ const ALL_REELS = [
 ];
 
 const ALL_CATEGORIES = ["All", ...Array.from(new Set(ALL_REELS.map((r) => r.category)))];
-const STORJ_BASE = "https://link.storjshare.io/s/jwgdhfs6it4vyrx45oujruwxco6a/amxreels";
+const STORJ_BASE = "https://link.storjshare.io/raw/jwgdhfs6it4vyrx45oujruwxco6a/amxreels";
 
 function ReelCard({
   reel,
