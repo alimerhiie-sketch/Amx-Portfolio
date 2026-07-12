@@ -63,12 +63,12 @@ function ReelCard({
 }) {
   const cardRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [loaded, setLoaded] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [showPlay, setShowPlay] = useState(false);
   const playTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const src = `${STORJ_BASE}/${encodeURIComponent(reel.file)}`;
+  const poster = `/posters/${encodeURIComponent(reel.file.replace(".mp4", ".jpg"))}`;
 
   useEffect(() => {
     if (!videoRef.current) return;
@@ -107,34 +107,16 @@ function ReelCard({
       onMouseLeave={handleMouseLeave}
       onClick={onClick}
     >
-      {src && (
-        <video
-          ref={videoRef}
-          src={src}
-          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
-          style={{ opacity: loaded ? 1 : 0 }}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          onLoadedMetadata={() => setLoaded(true)}
-        />
-      )}
-
-      {/* Placeholder gradient */}
-      <div
-        className="absolute inset-0 transition-opacity duration-500"
-        style={{
-          opacity: loaded ? 0 : 1,
-          background: `linear-gradient(135deg, #2E2E2E 0%, #1C1C1C 100%)`,
-        }}
-      >
-        <div className="absolute inset-0 flex items-center justify-center opacity-20">
-          <div className="w-16 h-16 rounded-full border-2 border-white flex items-center justify-center">
-            <Play size={20} fill="white" className="text-white ml-1" />
-          </div>
-        </div>
-      </div>
+      <video
+        ref={videoRef}
+        src={src}
+        poster={poster}
+        className="absolute inset-0 w-full h-full object-cover"
+        muted
+        loop
+        playsInline
+        preload="none"
+      />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
 
