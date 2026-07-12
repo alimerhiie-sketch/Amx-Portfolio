@@ -79,8 +79,8 @@ export default function Hero() {
           custom={2} initial="hidden" animate="visible" variants={fadeUp}
           className="text-lg md:text-xl text-muted max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          I&apos;m <strong className="text-fg">AMX</strong> — a content creator turning ideas
-          into short-form videos people can&apos;t ignore.
+          I&apos;m <strong className="text-fg">AMX</strong> — a videographer &amp; video editor
+          specializing in short-form content and AI-powered video production.
         </motion.p>
 
         {/* CTAs */}
