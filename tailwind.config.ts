@@ -9,8 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: "#1C1C1C",
+        surface: "#252525",
+        surface2: "#2E2E2E",
+        primary: "#DD4B24",
+        gold: "#F2A93B",
+        fg: "#FAFAFA",
+        muted: "#8A8A86",
+        border: "#3A3A3A",
+      },
+      fontFamily: {
+        heading: ["Archivo", "sans-serif"],
+        body: ["Space Grotesk", "sans-serif"],
       },
     },
   },
