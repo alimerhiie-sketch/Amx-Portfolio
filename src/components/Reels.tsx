@@ -115,7 +115,7 @@ function ReelCard({
         muted
         loop
         playsInline
-        preload="none"
+        preload="metadata"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
