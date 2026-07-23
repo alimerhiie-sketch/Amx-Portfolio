@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { ArrowDown, Play, Instagram } from "lucide-react";
+import { ArrowDown, Play } from "lucide-react";
 import FloatingElements from "./FloatingElements";
 
 const fadeUp: Variants = {
@@ -116,7 +116,7 @@ export default function Hero() {
             aria-label="Instagram"
             className="flex items-center gap-2 text-muted hover:text-primary transition-colors duration-200 text-sm cursor-pointer"
           >
-            <Instagram size={18} />
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
             <span>@Amx_editss</span>
           </a>
         </motion.div>
