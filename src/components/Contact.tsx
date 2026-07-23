@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Share2, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import SectionReveal from "./SectionReveal";
 
 export default function Contact() {
@@ -104,7 +104,7 @@ export default function Contact() {
                     (e.currentTarget as HTMLElement).style.color = "#8A8A86";
                   }}
                 >
-                  <Share2 size={18} />
+                  <Instagram size={18} />
                 </a>
               </div>
             </SectionReveal>

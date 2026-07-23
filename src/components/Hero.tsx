@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { ArrowDown, Play, Share2 } from "lucide-react";
+import { ArrowDown, Play, Instagram } from "lucide-react";
 import FloatingElements from "./FloatingElements";
 
 const fadeUp: Variants = {
@@ -116,8 +116,8 @@ export default function Hero() {
             aria-label="Instagram"
             className="flex items-center gap-2 text-muted hover:text-primary transition-colors duration-200 text-sm cursor-pointer"
           >
-            <Share2 size={18} />
-            <span>@ali.mer3ii</span>
+            <Instagram size={18} />
+            <span>@Amx_editss</span>
           </a>
         </motion.div>
       </div>
