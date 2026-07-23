@@ -110,7 +110,7 @@ export default function Hero() {
           className="flex items-center justify-center gap-6"
         >
           <a
-            href="https://www.instagram.com/ali.mer3ii"
+            href="https://instagram.com/Amx_editss"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"

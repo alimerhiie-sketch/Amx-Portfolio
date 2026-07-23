@@ -89,7 +89,7 @@ export default function Contact() {
             <SectionReveal delay={0.4}>
               <div className="flex items-center justify-center">
                 <a
-                  href="https://www.instagram.com/ali.mer3ii"
+                  href="https://instagram.com/Amx_editss"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
